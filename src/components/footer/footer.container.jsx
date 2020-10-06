@@ -32,7 +32,7 @@ export const FooterConatiner = () => {
                 </Footer.Column>
             </Footer.Row>
             <Footer.Break />
-        <Footer.Title>Netflix India</Footer.Title>
+            <Footer.Title>Netflix India <span role="img" aria-label="India">🇮🇳</span></Footer.Title>
         </Footer>
     )
 };
