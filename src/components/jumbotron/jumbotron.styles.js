@@ -10,15 +10,19 @@ export const Inner = styled.div`
     width:100%;
 
     @media(max-width:800px){
-    flex-direction:column ;
+    flex-direction:column;
+    max-width: 100vw;
+    width:100%;
     }
 `;
 export const Pane = styled.div`
     width: 50%;
-    @media (max-width:1000){
+    @media (max-width:800px){
         width: 100%;
         padding:0 45px;
-        text-align:center;
+        text-align:start;
+        max-width:100vw;
+
 }
 `;
 export const Title = styled.h1`
@@ -26,24 +30,29 @@ export const Title = styled.h1`
     line-height: 1.1;
     margin-bottom: 10px;
 
-@media (max-width:600){
+@media (max-width:800px){
     font-size: 30px;
+    width:100%;
 }
 `;
 export const SubTitle = styled.h2`
     font-size: 26px;
 	font-weight: normal;
 	line-height: normal;
-@media (max-width: 600px) {
-	font-size: 18px;
+@media (max-width: 800px) {
+	font-size: 20px;
+	line-height: 1.6;
+    width:100%;
 }
-
 `;
 export const Image = styled.img`
     max-width:100%;
     height:auto;
     display:block;
     margin: 0 auto;
+   @media (max-width: 800px) {
+    margin:-10px auto;
+}
 `;
 export const Item = styled.div`
     display: flex;
