@@ -10,9 +10,9 @@ function App() {
     <div className="App">
       <Router>
         <Route exact path={HOME} component={HomePage} />
-        <Route exact path={BROWSE} component={BrowsePage} />
-        <Route exact path={SIGN_IN} component={SignInPage} />
-        <Route exact path={SIGN_UP} component={SignUpPage} />
+        <Route path={BROWSE} component={BrowsePage} />
+        <Route path={SIGN_IN} component={SignInPage} />
+        <Route path={SIGN_UP} component={SignUpPage} />
       </Router>
     </div>
   );

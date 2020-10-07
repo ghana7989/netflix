@@ -29,7 +29,7 @@ FAQ.Header = function FAQHeader({ children, ...otherProps }) {
         setToggleShow((toggleShow) => !toggleShow)
     }
     return (
-        <Header on={toggleShow} onClick={handleToggle} {...otherProps}>
+        <Header on={toggleShow.toString()} onClick={handleToggle} {...otherProps}>
             {children}
             {
                 toggleShow ? (<img src="https://i.imgur.com/r9f09Nt.png" alt="Close"></img>)
@@ -40,5 +40,5 @@ FAQ.Header = function FAQHeader({ children, ...otherProps }) {
 }
 FAQ.Body = function FAQBody({ children, ...otherProps }) {
     const { toggleShow, setToggleShow } = useContext(ToggleContext)
-    return toggleShow ? <Body on={toggleShow} {...otherProps}>{children}</Body> : null
+    return toggleShow ? <Body on={toggleShow.toString()} {...otherProps}>{children}</Body> : null
 }
