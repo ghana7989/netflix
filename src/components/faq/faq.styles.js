@@ -34,7 +34,7 @@ export const Item = styled.div`
   color: white;
   margin-bottom: 10px;
   margin: auto;
-  max-width: 670px;
+  max-width: 700px;
   width: 100%;
 
   &:first-of-type {
@@ -46,7 +46,7 @@ export const Header = styled.div`
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  margin-bottom: 1px;
+  margin-bottom: ${props => props.on ? 0 : 10}px;
   font-size: 26px;
   font-weight: normal;
   background: #303030;
@@ -78,7 +78,8 @@ export const Body = styled.div`
   padding: 0.8em 2.2em 0.8em 1.2em;
   white-space: pre-wrap;
   user-select: none;
-
+  margin-bottom:${props => props.on ? 10 : 0}px;
+  margin-top:${props => props.on ? 1 : 0}px;
   @media (max-width: 600px) {
     font-size: 16px;
     line-height: 22px;
