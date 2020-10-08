@@ -9,7 +9,7 @@ import OptForm from '../components/opt-form/optForm.component';
 const HomePage = () => {
     return (
         <>
-            <HeaderContainer>
+            <HeaderContainer buttonLinkText="Sign In">
                 <Feature>
                     <Feature.Title>
                         Unlimited movies, TV shows and more.

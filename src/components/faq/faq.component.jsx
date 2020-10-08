@@ -36,9 +36,9 @@ FAQ.Header = function FAQHeader({ children, ...otherProps }) {
                     : (<img src="https://i.imgur.com/LbvbYvk.png" alt="Add" />)
             }
         </Header>
-    ) 
+    )
 }
 FAQ.Body = function FAQBody({ children, ...otherProps }) {
-    const { toggleShow, setToggleShow } = useContext(ToggleContext)
+    const { toggleShow } = useContext(ToggleContext)
     return toggleShow ? <Body on={toggleShow.toString()} {...otherProps}>{children}</Body> : null
 }

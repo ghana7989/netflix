@@ -3,7 +3,8 @@ import { Link as ReactRouterLink } from "react-router-dom";
 import { HOME } from '../../constants/routes';
 import { Background, Container, Logo, ButtonLink } from "./header.styles"
 
-export default function Header({ bg = true, children, ...otherProps }) {
+export default function Header({ bg = true, buttonLinkText = "Sign In", location, children, ...otherProps }) {
+
     return bg ? (
         <Background {...otherProps}>
             {children}
