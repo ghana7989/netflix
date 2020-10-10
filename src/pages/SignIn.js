@@ -12,7 +12,7 @@ import { useHistory } from "react-router-dom"
 const SignInPage = () => {
     const history = useHistory()
     const { firebase_ } = useContext(FirebaseContext)
-    const [email, setEmail] = useState("test@gmail.com");
+    const [email, setEmail] = useState("ghana@gmail.com");
     const [password, setPassword] = useState("123456");
     const [error, setError] = useState("");
 
@@ -23,10 +23,8 @@ const SignInPage = () => {
         if (re.test(email) && password.length > 4) {
             try {
                 const auth = await firebase_.auth()
-                const error = new Error("Take some coffe while I implement this functionality")
-                throw (error);
-                // const userData = await auth.signInWithEmailAndPassword(email, password)
-                // history.push(BROWSE)
+                const userData = await auth.signInWithEmailAndPassword(email, password)
+                history.push(BROWSE)
             } catch (error) {
                 setEmail("")
                 setPassword("")
@@ -51,7 +49,7 @@ const SignInPage = () => {
                             placeholder="Email address"
                             value={email}
                             onChange={({ target }) => setEmail(target.value)}
-                            autoComplete="off"
+                            autoComplete="ghsrtjklgsrhgjksrehsrjk"
                         />
                         <Form.Input
                             placeholder="Password"
@@ -67,9 +65,9 @@ const SignInPage = () => {
                     <Form.Text>
                         New to Netflix? <Form.Link to={SIGN_UP}>Sign Up</Form.Link>
                     </Form.Text>
-                    <Form.Text>
+                    <Form.TextSmall>
                         This page is protected by Google reCAPTCHA to ensure you're not a bot.Learn More
-                    </Form.Text>
+                    </Form.TextSmall>
                 </Form>
             </HeaderContainer>
 

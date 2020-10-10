@@ -3,10 +3,13 @@ import { render } from 'react-dom';
 import "normalize.css";
 import App from './app';
 import { GlobalStyles } from "./globalStyles"
+import FirebaseContextProvider from './context/firebase';
 render(
   <>
     <GlobalStyles />
-    <App />
+    <FirebaseContextProvider>
+      <App />
+    </FirebaseContextProvider>
   </>,
   document.getElementById('root')
 );
