@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b3d1261d20bf4aec32facfadbffa73bb",
+    "revision": "cc53dc6f0f6d32a28d036f8ea97cd4ef",
     "url": "/netflix/index.html"
   },
   {
-    "revision": "2c039afa344cf4ce0815",
+    "revision": "5af245fd94c771ce6ba3",
     "url": "/netflix/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "2c039afa344cf4ce0815",
-    "url": "/netflix/static/js/2.679e6561.chunk.js"
+    "revision": "5af245fd94c771ce6ba3",
+    "url": "/netflix/static/js/2.98dfc38b.chunk.js"
   },
   {
     "revision": "f9e7e68e90600aabdd7d1f759413461d",
-    "url": "/netflix/static/js/2.679e6561.chunk.js.LICENSE.txt"
+    "url": "/netflix/static/js/2.98dfc38b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7d5b4eceadee85df87a9",
-    "url": "/netflix/static/js/main.f0714e7b.chunk.js"
+    "revision": "9fdb493a8c0ba02370fb",
+    "url": "/netflix/static/js/main.52f5d4f4.chunk.js"
   },
   {
     "revision": "0587df36741fdadb7899",
