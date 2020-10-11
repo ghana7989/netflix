@@ -12,8 +12,8 @@ import { useHistory } from "react-router-dom"
 const SignInPage = () => {
     const history = useHistory()
     const { firebase_ } = useContext(FirebaseContext)
-    const [email, setEmail] = useState("ghana@gmail.com");
-    const [password, setPassword] = useState("123456");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
     const [error, setError] = useState("");
 
     const isInvalid = password === "" || email === ""
