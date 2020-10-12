@@ -4,4 +4,6 @@ This application (a Netflix clone) was built using React (Custom Hooks, Context)
 
 ## There are four different pages, some using protected routes with auth listeners. Firebase firestore handles all the data and that data is retrieved using a custom hook; authentication is used on all pages, which is handled by Firebase as well.
 
+### Here Is the website -> https://ghana7989.github.io/netflix
+
 I used compound components (just a design pattern) to build my components, and there's over 10 examples as to how these are used. The styling is all handled via styled components. Using compound components made my actual dumb components really easy to test.
