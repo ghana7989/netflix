@@ -16,7 +16,7 @@ export function SelcetProfileContainer({ user, setProfile }) {
             </Header>
             <Profile>
                 <Profile.Title>
-                    Who the Fuck is Watching?
+                    Who is Watching?
             </Profile.Title>
                 <Profile.List>
                     <Profile.User onClick={() => setProfile({
